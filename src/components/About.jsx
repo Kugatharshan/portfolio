@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Container, Row, Col } from "react-bootstrap";
-import { FaLinkedin, FaGithub, FaTwitter, FaDownload, FaHeartbeat, FaUsers, FaChartBar } from "react-icons/fa";
+import { FaLinkedin,FaEnvelope,FaYoutube, FaDownload, FaHeartbeat, FaUsers, FaChartBar, FaFacebook } from "react-icons/fa";
 import "./About.css";
 import  { useState, useEffect } from "react";
 import SectionDivider from "./SectionDivider";
@@ -47,7 +47,7 @@ function About() {
              
 
               <div className="about-intro-session">
-              Hello, I am <span style={{ color: "#a0b1c5  ", fontWeight: "bold", fontSize: "2.2rem" }}>Kugatharshan</span>. I work as a{" "}
+              Hello, I am <span style={{ color: "#a0b1c5  ", fontWeight: "bold", fontSize: "2.2rem" }}>E.Kugatharshan</span>. I work as a{" "}
                 <span style={{ color: "#a0b1c5  ", fontWeight: "bold", fontSize: "2.5rem" }} className="typewriter-text">{text}</span>
                 
                 <p className="bio-content">
@@ -58,28 +58,56 @@ function About() {
                 </p>
 
                 <div className="social-wrapper">
-                  <a href="#" className="social-icon">
-                    <FaLinkedin />
-                    <span className="icon-label">LinkedIn</span>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <FaGithub />
-                    <span className="icon-label">GitHub</span>
-                  </a>
-                  <a href="#" className="social-icon">
-                    <FaTwitter />
-                    <span className="icon-label">Twitter</span>
-                  </a>
-                </div>
+  <a
+    href="https://www.linkedin.com/in/kugatharshan-elangeshwaran-2342b1234/"
+    className="social-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaLinkedin />
+    <span className="icon-label">LinkedIn</span>
+  </a>
+
+  <a
+    href="https://www.facebook.com/elangeshwaran.kugatharshan?_rdc=1&_rdr#"
+    className="social-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebook />
+    <span className="icon-label">Facebook</span>
+  </a>
+
+  <a
+    href="mailto:e.kugatharsh@gmail.com"
+    className="social-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaEnvelope />
+    <span className="icon-label">Email</span>
+  </a>
+
+  <a
+    href="mailto:e.kugatharsh@gmail.com"
+    className="social-icon"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaYoutube />
+    <span className="icon-label">YouTube</span>
+  </a>
+</div>
 
                 <div className="cv-wrapper">
-                  <a href="#" className="cv-button">
-                    <div className="button-inner">
-                      <FaDownload />
-                      <span>Download CV</span>
-                    </div>
-                    <div className="button-shine"></div>
-                  </a>
+                <a href="resume.pdf" download className="cv-button">
+  <div className="button-inner">
+    <FaDownload />
+    <span>Download CV</span>
+  </div>
+  <div className="button-shine"></div>
+</a>
+
                 </div>
               </div>
             </div>
@@ -92,7 +120,7 @@ function About() {
                 <div className="image-border"></div>
                 <div className="image-content">
                   <img 
-                    src="sample.jpeg" 
+                    src="profile.jpeg" 
                     alt="E.KUGATHARSHAN" 
                     className="profile-image"
                   />

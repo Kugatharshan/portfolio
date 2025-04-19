@@ -49,7 +49,7 @@ function App() {
             <Projects />
             <Skills />
             <Gallery />
-            <Contact />
+
           </main>
         } />
         <Route path="/terms" element={<Terms />} />

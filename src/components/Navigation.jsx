@@ -21,7 +21,7 @@ function Navigation() {
     <Navbar expand="lg" fixed="top" className="nav-glassmorphism">
       <Container>
         <Navbar.Brand href="#" className="nav-brand-wrapper">
-          <span className="nav-brand-text">Kugatharshan</span>
+          <span className="nav-brand-text">Kugatharshan.E</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="nav-toggle">
           <span className="nav-toggle-icon"></span>

@@ -1,5 +1,5 @@
-import { Container, Row, Col } from 'react-bootstrap'
-import { FaImages, FaUsers, FaChalkboardTeacher, FaUserTie, FaMicrophone, FaHandshake, FaHeartbeat, FaBaby, FaTimes } from 'react-icons/fa'
+import { Container } from 'react-bootstrap'
+import { FaImages, FaUsers, FaChalkboardTeacher, FaUserTie, FaMicrophone, FaHandshake, FaHeartbeat, FaTimes } from 'react-icons/fa'
 import { useState } from 'react'
 import './Gallery.css'
 
@@ -8,33 +8,33 @@ function Gallery() {
 
   const galleryItems = [
     { 
-      title: 'Community Events', 
-      url: './sample.jpeg',
+      title: 'Sustainable Development Goals (SDGs) Project ', 
+      url: 'sus.jpeg',
       icon: <FaUsers className="gallery-item-icon" />
     },
     { 
-      title: 'Health Workshops', 
-      url: 'https://placehold.co/600x400?text=Health+Workshops',
+      title: 'National Child Protection Authority works ', 
+      url: 'ini.jpeg',
       icon: <FaChalkboardTeacher className="gallery-item-icon" />
     },
     { 
-      title: 'Team Leadership', 
-      url: 'https://placehold.co/600x400?text=Team+Leadership',
+      title: 'Health Promotion Initiatives - FIELD WORK ', 
+      url: 'hea.jpeg',
       icon: <FaUserTie className="gallery-item-icon" />
     },
     { 
-      title: 'Public Speaking', 
-      url: 'https://placehold.co/600x400?text=Public+Speaking',
+      title: 'COMMUNITY & SOCIAL WORK ', 
+      url: 'soci.jpeg',
       icon: <FaMicrophone className="gallery-item-icon" />
     },
     { 
-      title: 'Health Promotion', 
-      url: 'https://placehold.co/600x400?text=Health+Promotion',
+      title: 'Extracurricular Activities', 
+      url: 'spo.jpeg',
       icon: <FaHeartbeat className="gallery-item-icon" />
     },
     { 
-      title: 'Community Engagement', 
-      url: 'https://placehold.co/600x400?text=Community+Engagement',
+      title: 'Other ', 
+      url: 'other.jpeg',
       icon: <FaHandshake className="gallery-item-icon" />
     }
   ]

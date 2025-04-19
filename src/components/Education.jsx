@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Container } from 'react-bootstrap';
-import { FaGraduationCap, FaAward, FaCertificate, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaGlobe ,FaLanguage ,FaChild ,FaAward,FaHandsHelping,FaUsersCog ,FaCertificate, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import { BiBookOpen, BiTimeFive } from 'react-icons/bi';
 import './Education.css';
 import SectionDivider from "./SectionDivider";
@@ -10,92 +10,109 @@ function Education() {
 
   const milestones = [
     {
-      id: 'degree',
+      id: 'health-promotion',
       title: 'BSc in Health Promotion',
       institution: 'Rajarata University of Sri Lanka',
       duration: '4 Years',
-      period: '2018 - 2022',
+      period: '2021 - 2025',
       details: (
         <ul>
-          <li>In-depth understanding of health promotion theories – Gaining knowledge of core principles in public health to promote well-being and prevent diseases.</li>
-          <li>Hands-on experience in designing health programs – Developing and evaluating health campaigns tailored to specific community needs.</li>
-          <li>Research-driven approach to health interventions – Utilizing research methodologies to assess and improve community health outcomes.</li>
+          <li>Health Promotion Concepts & Strategies – Understanding the history, evolution, and fundamental principles of health promotion.</li>
+          <li>Community Engagement & Leadership – Strategies to mobilize and empower communities for sustainable health improvements.</li>
+          <li>Social Structure & Social Influence – Analyzing how societal norms, behaviors, and structures impact public health.</li>
+          <li>Sustainable Health Promotion & Future Directions – Exploring long-term strategies for sustainable community health interventions.</li>
+          <li>Public Health Policy & Legislation – Understanding policies that govern public health and their impact on communities.</li>
         </ul>
       ),
+      skills: ['Health Promotion', 'Community Engagement', 'Public Health Policy'],
       icon: <FaGraduationCap />
     },
     {
-      id: 'psychology',
-      title: 'Child and Educational Psychology',
+      id: 'child-psych-diploma',
+      title: 'Diploma in Child and Educational Psychology',
       institution: 'Institute of Psychology',
-      duration: '2 Years',
-      period: '2021 - 2026',
+      duration: '1 Year',
+      period: '2022 - 2023',
       details: (
         <ul>
-          <li>Studying child development theories – Understanding cognitive and emotional growth in children.</li>
-          <li>Specializing in educational assessment – Assessing children's learning capabilities and behavior in an educational environment.</li>
-          <li>Application of psychological techniques – Using psychological knowledge to improve educational outcomes for children.</li>
+          <li>Introduction to Psychology</li>
+          <li>Early Childhood Development</li>
+          <li>Advanced Child Psychology</li>
+          <li>The Developing Child and Mental Illness</li>
+          <li>Counselling for Children</li>
+          <li>Motivation and Emotions</li>
         </ul>
       ),
-      skills: ['Child Development', 'Educational Assessment'],
-      icon: <FaCertificate />
+      icon: <FaChild  />
     },
     {
-      id: 'counselling',
-      title: 'Counselling Psychology',
-      institution: 'Transmind Institute',
-      duration: '1.5 Years',
+      id: 'counselling-diploma',
+      title: 'Diploma in Counselling Psychology',
+      institution: 'Transmind Institute of Training and Development (Pvt) Ltd',
+      duration: '1 Year',
+      period: '2022 - 2023',
       details: (
         <ul>
-          <li>Mastering therapeutic techniques – Developing counseling strategies to help clients manage mental health challenges.</li>
-          <li>Providing mental health assessments – Using assessment tools to diagnose and treat mental health issues.</li>
-          <li>Client-focused counseling – Tailoring counseling sessions to meet individual client needs and improve their emotional well-being.</li>
+          <li>Introduction to Psychology</li>
+          <li>Introduction to Counselling</li>
+          <li>Basic Counselling Skills</li>
+          <li>Professional Ethics in Counselling</li>
+          <li>Advanced Counselling Skills and Techniques</li>
+          <li>Therapy and Treatment</li>
         </ul>
       ),
-      skills: ['Therapeutic Techniques', 'Mental Health Assessment'],
-      icon: <FaCertificate />
+      
+      icon: <FaHandsHelping />
     },
     {
-      id: 'hrm',
-      title: 'Human Resource Management',
+      id: 'hrm-diploma',
+      title: 'Diploma in Human Resource Management',
       institution: 'CASED Institute',
       duration: '1 Year',
+      period: '2024 - 2025',
       details: (
         <ul>
-          <li>Understanding personnel management – Gaining expertise in managing employee relations and workplace dynamics.</li>
-          <li>Organizational behavior theories – Studying behavior in organizations and applying knowledge to enhance productivity.</li>
-          <li>HR strategy implementation – Learning to create and execute strategies to improve workforce performance.</li>
+          <li>Importance of Human Resource Management (HRM)</li>
+          <li>Functions of HRM</li>
+          <li>Roles and Responsibilities of HRM</li>
+          <li>Compensation and Motivation</li>
+          <li>Payroll Management System</li>
+          <li>Handling Confidential Information</li>
         </ul>
       ),
-      skills: ['Personnel Management', 'Organizational Behavior'],
-      icon: <FaCertificate />
+      skills: ['HR Management', 'Payroll Systems', 'Confidentiality Handling'],
+      icon: <FaUsersCog />
     },
     {
-      id: 'language',
-      title: 'John Keels Foundation Programme (English)',
-      achievement: 'Merit',
+      id: 'sinhala-diploma',
+      title: 'Diploma in Sinhala',
+      institution: 'CASED Institute',
+      duration: '1 Year',
+      period: '2014 - 2015',
       details: (
         <ul>
-          <li>Developing English language proficiency – Mastering reading, writing, and speaking skills in English.</li>
-          <li>Enhancing communication skills – Improving verbal and written communication in various professional settings.</li>
-          <li>Understanding English literature – Studying literary works to deepen appreciation for English culture and language.</li>
+          <li>Focused on Sinhala language proficiency including grammar, writing, and communication skills.</li>
         </ul>
       ),
-      icon: <BiBookOpen />
+      skills: ['Sinhala Language', 'Communication', 'Writing Skills'],
+      icon: <FaLanguage />
     },
     {
-      id: 'english',
-      title: 'General English Course',
-      achievement: 'Distinction & Merit',
+      id: 'english-diploma',
+      title: 'Diploma in English (UK Pearson Assured)',
+      institution: 'ESOFT Metro Campus',
+      duration: 'Completed',
+      period: 'July 2020',
       details: (
         <ul>
-          <li>Comprehensive grammar and vocabulary study – Enhancing language structure and word usage.</li>
-          <li>Advanced reading and writing skills – Sharpening ability to understand and produce complex English texts.</li>
-          <li>Communication in global contexts – Preparing for global communication with a focus on fluency and clarity.</li>
+          <li>Enhanced English language proficiency in reading, writing, speaking, and listening.</li>
+          <li>Completed a UK Pearson Assured program emphasizing global English standards.</li>
         </ul>
       ),
-      icon: <BiBookOpen />
+      skills: ['English Proficiency', 'Communication', 'Academic Writing'],
+      icon: <FaGlobe />
     }
+    
   ];
   
 
